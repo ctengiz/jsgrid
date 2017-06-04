@@ -95,6 +95,8 @@
 .jsgrid-cell.readonly > input {
     border: 1px solid #dbdee0 !important;
     color: #888;
+    background-color: #eee;
+    opacity: 1;
 }
 
 .jsgrid-grid-body .jsgrid-row:first-child .jsgrid-cell,
