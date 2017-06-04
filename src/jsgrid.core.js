@@ -483,14 +483,12 @@
         },
 
         _prepareCell: function(cell, field, cssprop, cellClass) {
-            var acell= $(cell).css("width", field.width)
+            return $(cell).css("width", field.width)
                 .addClass(cellClass || this.cellClass)
                 .addClass(field.readOnly ? 'readonly' : '')
                 .addClass((cssprop && field[cssprop]) || field.css)
                 .addClass(field.align ? ("jsgrid-align-" + field.align) : "")
                 .data("name", field.name);
-
-            return acell;
         },
 
         _createFilterRow: function() {
