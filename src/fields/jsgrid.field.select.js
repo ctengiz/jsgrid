@@ -111,7 +111,8 @@
 
             $result.prop("disabled", !!this.readOnly);
             $result.prop("selectedIndex", selectedIndex);
-			
+            $result.prop("name", this.name);
+
             return $result;
         }
     });

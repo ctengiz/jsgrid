@@ -32,7 +32,9 @@
 
         _createTextBox: function() {
 			return $("<input>").attr("type", "number")
+                .prop("name", this.name)
                 .prop("readonly", !!this.readOnly);
+
         }
     });
 

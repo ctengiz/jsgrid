@@ -60,6 +60,7 @@
 
         _createTextBox: function() {
             return $("<input>").attr("type", "text")
+                .prop("name", this.name)
                 .prop("readonly", !!this.readOnly);
         }
     });

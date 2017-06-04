@@ -88,7 +88,9 @@
         },
 
         _createCheckbox: function() {
-            return $("<input>").attr("type", "checkbox");
+            return $("<input>")
+                .prop("name", this.name)
+                .attr("type", "checkbox");
         }
     });
 
